@@ -17,8 +17,8 @@ MongoDB must be installed on the local server
 
 ## Branch info
 <ul>
-  <li><b>Master</b>: Master branch for developmet</li>
-  <li><b>Deployment</b>: Branch for deployment. This repo using <a href="https://herokuapp.com/">Heroku</a> to deploy the branch</li>
+  <li><b>master</b>: Master branch for developmet</li>
+  <li><b>deployment</b>: Branch for deployment. This repo using <a href="https://herokuapp.com/">Heroku</a> to deploy the branch</li>
   <li><b>feature/feature-name</b>: Branch that you use to add new features</li>
 </ul>
 
