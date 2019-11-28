@@ -1,0 +1,20 @@
+{
+  "name": "bayes-text-classifier",
+  "version": "1.0.0",
+  "description": "Text classifier using Naive Bayes",
+  "main": "index.js",
+  "author": "Rico Sandyca Novenza",
+  "license": "MIT",
+  "scripts": {
+    "start": "node dist/main.js",
+    "dev:node": "nodemon -q dist/main.js",
+    "dev:ts": "tsc --watch",
+    "dev": "concurrently \"yarn dev:ts\" \"yarn dev:node\"",
+    "build": "rm -rf dist && tsc"
+  },
+  "devDependencies": {
+    "concurrently": "^5.0.0",
+    "nodemon": "^2.0.1",
+    "typescript": "^3.7.2"
+  }
+}
