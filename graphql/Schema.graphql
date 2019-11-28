@@ -1,3 +1,2 @@
-type Query {
-  Hello: String
-}
+# import Query.*, Mutation.* from 'Document.graphql'
+# import Query.*, Mutation.* from 'Category.graphql'
