@@ -1,8 +1,11 @@
+# import Document from 'Document.graphql'
+
 scalar Date
 
 type Category {
   _id: ID
   name: String
+  documents: [Document]
   createdAt: Date
   updatedAt: Date
 }
