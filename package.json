@@ -10,7 +10,8 @@
     "dev:node": "nodemon -q dist/main.js",
     "dev:ts": "tsc --watch",
     "dev": "concurrently \"yarn dev:ts\" \"yarn dev:node\"",
-    "build": "rm -rf dist && tsc"
+    "build": "rm -rf dist && tsc",
+    "db-seed": "yarn build && node dist/models/seeds/index.js"
   },
   "devDependencies": {
     "concurrently": "^5.0.0",
