@@ -11,7 +11,7 @@ import Category, { Category as ICategory } from './Category'
   timestamps: true
 }})
 export class Document {
-  @prop() content!: string
+  @prop() content?: string
   @prop({ required: true, ref: 'categories' }) category!: Ref<ICategory>
 }
 
