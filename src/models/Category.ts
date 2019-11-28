@@ -1,5 +1,10 @@
-import { modelOptions, prop, getModelForClass } from '@typegoose/typegoose'
+import { modelOptions, prop, getModelForClass, pre } from '@typegoose/typegoose'
+import Document from './Document'
 
+@pre<Category>('findOneAndRemove', async function () {
+  const { _id } = this.getQuery()
+  await Document.deleteMany({ category: _id })
+})
 @modelOptions({ schemaOptions: {
   collection: 'categories',
   timestamps: true

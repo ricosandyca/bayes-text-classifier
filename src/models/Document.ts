@@ -1,6 +1,11 @@
-import { prop, getModelForClass, modelOptions, Ref } from '@typegoose/typegoose'
-import { Category as ICategory } from './Category'
+import { pre, prop, getModelForClass, modelOptions, Ref } from '@typegoose/typegoose'
+import Category, { Category as ICategory } from './Category'
 
+@pre<Document>('save', async function (next) {
+  const { category } = this
+  if (!await Category.findById(category))
+    next(new Error('Category not found'))
+})
 @modelOptions({ schemaOptions: {
   collection: 'documents',
   timestamps: true
