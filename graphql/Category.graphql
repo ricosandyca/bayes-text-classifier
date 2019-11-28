@@ -1,0 +1,26 @@
+# import Document from 'Document.graphql'
+
+scalar Date
+
+type Category {
+  _id: ID
+  name: String
+  documents: [Document]
+  createdAt: Date
+  updatedAt: Date
+}
+
+input CategoryInput {
+  name: String!
+}
+
+type Query {
+  categories: [Category]
+  category(_id: ID!): Category
+}
+
+type Mutation {
+  createCategory(data: CategoryInput!): Category
+  updateCategory(_id: ID! data: CategoryInput!): Category
+  deleteCategory(_id: ID!): Category
+}

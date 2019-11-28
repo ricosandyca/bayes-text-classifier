@@ -10,7 +10,8 @@
     "dev:node": "nodemon -q dist/main.js",
     "dev:ts": "tsc --watch",
     "dev": "concurrently \"yarn dev:ts\" \"yarn dev:node\"",
-    "build": "rm -rf dist && tsc"
+    "build": "rm -rf dist && tsc",
+    "db-seed": "yarn build && node dist/models/seeds/index.js"
   },
   "devDependencies": {
     "concurrently": "^5.0.0",
@@ -22,8 +23,11 @@
     "@types/express": "^4.17.2",
     "@types/mongoose": "^5.5.32",
     "@types/node": "^12.12.14",
+    "@types/node-fetch": "^2.5.4",
+    "apollo-server-express": "^2.9.12",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
+    "graphql-import": "^0.7.1",
     "mongoose": "^5.7.12"
   }
 }

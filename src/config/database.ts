@@ -9,7 +9,9 @@ const database: IDatabase = {
   uri: process.env.DATABASE_URI || 'mongodb://localhost/bayes-classifier',
   options: {
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false
   }
 }
 

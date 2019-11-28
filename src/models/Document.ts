@@ -6,12 +6,17 @@ import Category, { Category as ICategory } from './Category'
   if (!await Category.findById(category))
     next(new Error('Category not found'))
 })
+@pre<Document>('findOneAndUpdate', async function () {
+  const { category } = this.getUpdate()
+  if (!await Category.findById(category))
+    throw new Error('Category not found')
+})
 @modelOptions({ schemaOptions: {
   collection: 'documents',
   timestamps: true
 }})
 export class Document {
-  @prop() content!: string
+  @prop() content?: string
   @prop({ required: true, ref: 'categories' }) category!: Ref<ICategory>
 }
 
