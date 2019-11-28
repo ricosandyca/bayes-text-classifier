@@ -5,7 +5,7 @@ Text classifier using Naive Bayes algorithm (in development)
 MongoDB must be installed on the local server
 ```
 
-## Quick start
+## Quick Start
 <ol>
   <li>Clone this repo using <code>git clone https://github.com/ricosandyca/bayes-text-classifier</code></li>
   <li>Run <code>npm install</code> or <code>yarn install</code> to install all dependencies</li>
@@ -15,9 +15,9 @@ MongoDB must be installed on the local server
   <li>Enjoy</li>
 </ol>
 
-## Branch info
+## Branch Info
 <ul>
-  <li><b>master</b>: Master branch for developmet</li>
+  <li><b>master</b>: Master branch for development</li>
   <li><b>deployment</b>: Branch for deployment. This repo using <a href="https://herokuapp.com/">Heroku</a> to deploy the branch</li>
   <li><b>feature/feature-name</b>: Branch that you use to add new features</li>
 </ul>
