@@ -1,2 +1,6 @@
 # import Query.*, Mutation.* from 'Document.graphql'
-# import Query.*, Mutation.* from 'Category.graphql'
+# import Category, Query.*, Mutation.* from 'Category.graphql'
+
+type Query {
+  classify(document: String!): Category
+}

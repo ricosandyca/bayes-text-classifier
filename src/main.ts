@@ -2,6 +2,7 @@ import express from 'express'
 import bodyParser from 'body-parser'
 import mongoose from 'mongoose'
 import { ApolloServer } from 'apollo-server-express'
+import path from 'path'
 
 import * as config from './config'
 import schema from './schema'
@@ -20,5 +21,6 @@ GraphQLServer.applyMiddleware({ app, path: '/graphql' })
 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
+app.use(express.static(path.join(__dirname, '..', 'client', 'build')))
 
 app.listen(PORT, () => console.log('Server running on port', PORT))
