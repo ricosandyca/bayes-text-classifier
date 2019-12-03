@@ -1,5 +1,5 @@
-import stemmer from 'stemmer'
 import stopword from 'stopword'
+const { stem } = require('porter-stemmer-indonesia')
 
 /**
   * Text processing stage
@@ -74,7 +74,7 @@ function tokenizing (document: string): Array<string> {
   * @return new array of string without stopwords
   */
 function stopwordRemoval (words: Array<string>) {
-  return stopword.removeStopwords(words)
+  return stopword.removeStopwords(words, stopword.id)
 }
 
 /**
@@ -86,6 +86,6 @@ function stopwordRemoval (words: Array<string>) {
 function stemming (words: Array<string>): Array<string> {
   return words.reduce((state: Array<string>, word) => ([
     ...state,
-    stemmer(word)
+    stem(word)
   ]), [])
 }

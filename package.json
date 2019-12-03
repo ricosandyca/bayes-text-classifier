@@ -30,6 +30,7 @@
     "express": "^4.17.1",
     "graphql-import": "^0.7.1",
     "mongoose": "^5.7.12",
+    "porter-stemmer-indonesia": "^1.0.1",
     "stemmer": "^1.0.4",
     "stopword": "^0.3.4"
   }

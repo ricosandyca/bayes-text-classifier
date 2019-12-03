@@ -1787,6 +1787,11 @@ pify@^3.0.0:
   resolved "https://registry.yarnpkg.com/pify/-/pify-3.0.0.tgz#e5a4acd2c101fdf3d9a4d07f0dbc4db49dd28176"
   integrity sha1-5aSs0sEB/fPZpNB/DbxNtJ3SgXY=
 
+porter-stemmer-indonesia@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/porter-stemmer-indonesia/-/porter-stemmer-indonesia-1.0.1.tgz#4cf5116fa66402e5dcb00ad982ec174910413fd7"
+  integrity sha512-oFOZ20WtiQ1Wn16PkEWUP7bS1x+RamG6sFt+d2g/zPfFkiGng4720VkpzGIFPv4l59yKZeemDUxvq3ABZnnHTg==
+
 prepend-http@^1.0.1:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/prepend-http/-/prepend-http-1.0.4.tgz#d4f4562b0ce3696e41ac52d0e002e57a635dc6dc"

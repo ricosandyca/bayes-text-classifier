@@ -24,7 +24,7 @@ export default function (bagofwords: ITermValue[]): ITermValue[] {
           [key]: (
             ((bagofwords[classIndex][key] || 0) + 1) /
             (Object.keys(classTerms).length + allWords.length)
-          )
+          ) * 1000000
         }), {})
     ]), [])
 }
