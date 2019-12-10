@@ -1,4 +1,4 @@
-import stopword from 'stopword'
+const stopword = require('stopword')
 const { stem } = require('porter-stemmer-indonesia')
 
 /**
