@@ -1,10 +1,8 @@
 import Category, { Category as ICategory } from '../Category'
 
 const data: Array<ICategory> = [
-  { name: 'Sport' },
-  { name: 'Food' },
-  { name: 'Entertaiment' },
-  { name: 'Tech' }
+  { name: 'Positif' },
+  { name: 'Negatif' },
 ]
 
 export default function () {
