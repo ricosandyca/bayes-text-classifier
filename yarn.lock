@@ -271,6 +271,11 @@
     "@types/express-serve-static-core" "*"
     "@types/mime" "*"
 
+"@types/stemmer@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@types/stemmer/-/stemmer-1.0.2.tgz#bd8354f50b3c9b87c351d169240e45cf1fa1f5e8"
+  integrity sha512-2gWEIFqVZjjZxo8/TcugCAl7nW9Jd9ArEDpTAc5nH7d+ZUkreHA7GzuFcLZ0sflLrA5b1PZ+2yDyHJcuP9KWWw==
+
 "@types/ws@^6.0.0":
   version "6.0.4"
   resolved "https://registry.yarnpkg.com/@types/ws/-/ws-6.0.4.tgz#7797707c8acce8f76d8c34b370d4645b70421ff1"
@@ -1782,6 +1787,11 @@ pify@^3.0.0:
   resolved "https://registry.yarnpkg.com/pify/-/pify-3.0.0.tgz#e5a4acd2c101fdf3d9a4d07f0dbc4db49dd28176"
   integrity sha1-5aSs0sEB/fPZpNB/DbxNtJ3SgXY=
 
+porter-stemmer-indonesia@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/porter-stemmer-indonesia/-/porter-stemmer-indonesia-1.0.1.tgz#4cf5116fa66402e5dcb00ad982ec174910413fd7"
+  integrity sha512-oFOZ20WtiQ1Wn16PkEWUP7bS1x+RamG6sFt+d2g/zPfFkiGng4720VkpzGIFPv4l59yKZeemDUxvq3ABZnnHTg==
+
 prepend-http@^1.0.1:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/prepend-http/-/prepend-http-1.0.4.tgz#d4f4562b0ce3696e41ac52d0e002e57a635dc6dc"
@@ -2086,6 +2096,16 @@ spdx-license-ids@^3.0.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/statuses/-/statuses-1.5.0.tgz#161c7dac177659fd9811f43771fa99381478628c"
   integrity sha1-Fhx9rBd2Wf2YEfQ3cfqZOBR4Yow=
+
+stemmer@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/stemmer/-/stemmer-1.0.4.tgz#b68a4c715ecc5f6fb34f37f0acb64592c12ceeca"
+  integrity sha512-3EOHP7r8MAmnAbl7u0VuAe0DFmaJNmbLq1OpxETvN6cmWOO5i++wVH11OkKme8B4XA78j3e/TJC/6/FDp35oLg==
+
+stopword@^0.3.4:
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/stopword/-/stopword-0.3.4.tgz#ed6ce371010e77fc641af8865789a0523b6764bd"
+  integrity sha512-aNjoiPJEBWBp/Qnes44I7FHWvsPVTQEuhFM1EgqwjZrTaCJDNkGoUHk0W6raBSVDbSszd3YXFB4W7IhGZ7ktrQ==
 
 streamsearch@0.1.2:
   version "0.1.2"

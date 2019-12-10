@@ -4,29 +4,51 @@ import Document, { Document as IDocument } from '../Document'
 const { ObjectId } = Types
 
 /**
-  * Sport: 5ddfbb36976a1f08e4ef0424
-  * Food: 5ddfbb36976a1f08e4ef0425
-  * Entertaiment: 5ddfbb36976a1f08e4ef0426
-  * Tech: 5ddfbb36976a1f08e4ef0427
+  * Positif: 5de6709b62b3043c8d258d1f
+  * Negatif: 5de6709b62b3043c8d258d20
   **/
 
 const data: Array<IDocument> = [
   {
-    content: 'Sport: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    category: ObjectId('5ddfbb36976a1f08e4ef0424')
+    content: 'barangnya bagus, respon penjual cepat',
+    category: ObjectId('5de6709b62b3043c8d258d1f')
   },
   {
-    content: 'Food: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    category: ObjectId('5ddfbb36976a1f08e4ef0425')
+    content: 'top seller',
+    category: ObjectId('5de6709b62b3043c8d258d1f')
   },
   {
-    content: 'Entertaiment: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    category: ObjectId('5ddfbb36976a1f08e4ef0426')
+    content: 'biarkan bintang berbicara',
+    category: ObjectId('5de6709b62b3043c8d258d1f')
   },
   {
-    content: 'Tech: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    category: ObjectId('5ddfbb36976a1f08e4ef0427')
+    content: 'pesan minggu senin sampe',
+    category: ObjectId('5de6709b62b3043c8d258d1f')
   },
+  {
+    content: 'sesuai espektasi',
+    category: ObjectId('5de6709b62b3043c8d258d1f')
+  },
+  {
+    content: 'terimakasih barang sudah sampai dengan selamat',
+    category: ObjectId('5de6709b62b3043c8d258d1f')
+  },
+  {
+    content: 'produk sesuai deskripsi, makasih',
+    category: ObjectId('5de6709b62b3043c8d258d1f')
+  },
+  {
+    content: 'mengecewakan penyok ujungnya',
+    category: ObjectId('5de6709b62b3043c8d258d20')
+  },
+  {
+    content: 'ternyata rapuh sekali, nyesel dah beli 2',
+    category: ObjectId('5de6709b62b3043c8d258d20')
+  },
+  {
+    content: 'pesen warna merah yang datang biru bukan merah',
+    category: ObjectId('5de6709b62b3043c8d258d20')
+  }
 ]
 
 export default function () {
